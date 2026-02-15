@@ -4,7 +4,7 @@ import json
 import os
 
 # ==================== SOZLAMALAR ====================
-TOKEN = "8542065155:AAFLxjDCYyi3JdVQ_q8_cnDIGB-P2Brt2mg"
+TOKEN = os.getenv("BOT_TOKEN")
 ADMIN_ID = 5791947157
 
 bot = telebot.TeleBot(TOKEN)
@@ -40,7 +40,7 @@ def start(message):
         markup.add("🔎 Animelarni qidirish")
         bot.send_message(uid, "🎬 Xush kelibsiz!", reply_markup=markup)
 
-# ==================== DONE BUYRUG'I (YUQORIGA KO‘CHIRILDI) ====================
+# ==================== DONE BUYRUG'I ====================
 @bot.message_handler(commands=['done'])
 def done_command(message):
     uid = message.from_user.id
