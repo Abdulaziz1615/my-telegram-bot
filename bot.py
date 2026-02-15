@@ -4,7 +4,7 @@ import json
 import os
 
 # ==================== SOZLAMALAR ====================
-TOKEN = os.getenv("8542065155:AAFLxjDCYyi3JdVQ_q8_cnDIGB-P2Brt2mg")
+TOKEN = "8542065155:AAFLxjDCYyi3JdVQ_q8_cnDIGB-P2Brt2mg"
 ADMIN_ID = 5791947157
 
 bot = telebot.TeleBot(TOKEN)
@@ -269,4 +269,5 @@ def send_anime_info(uid, code, data):
 # ==================== ISHGA TUSHIRISH ====================
 print("✅ Bot ishga tushdi...")
 bot.infinity_polling()
+
 
