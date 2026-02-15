@@ -1,0 +1,9 @@
+pyTelegramBotAPI
+
+pyTelegramBotAPI==4.31.0
+requests
+python-dotenv
+
+git add requirements.txt
+git commit -m "Add requirements.txt"
+git push
